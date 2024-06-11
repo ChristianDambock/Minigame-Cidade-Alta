@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+### README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Mini-Game: Sequência de Teclas
 
-## Available Scripts
+## Apresentação
 
-In the project directory, you can run:
+Olá! Meu nome é Christian Dambock Gomes e sou desenvolvedor front-end com experiência em criação de aplicações interativas e dinâmicas utilizando React. Este projeto é um mini-game desenvolvido como parte de um desafio de front-end. O objetivo do jogo é testar a habilidade do jogador em seguir rapidamente uma sequência aleatória de teclas dentro de um tempo limite.
 
-### `npm start`
+## Sobre o Jogo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Descrição
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Neste mini-game, o jogador deve seguir uma sequência de teclas que aparece na tela, pressionando cada tecla na ordem correta. O jogo é uma excelente maneira de treinar a memória e a agilidade, proporcionando diversão e desafio para todos os jogadores.
 
-### `npm test`
+### Lógica do Jogo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Início do Jogo**: Ao iniciar o jogo, uma sequência aleatória de letras de A a Z é gerada e exibida ao jogador.
+2. **Objetivo**: O jogador deve pressionar as teclas na ordem correta dentro do tempo limite.
+3. **Feedback Visual**: 
+   - A próxima tecla a ser pressionada é destacada em amarelo.
+   - Se a tecla pressionada estiver correta, ela ficará verde.
+   - Se a tecla pressionada estiver incorreta, ela ficará vermelha e o jogo terminará.
+4. **Fim do Jogo**: O jogo termina se o jogador pressionar a tecla errada ou se o tempo acabar. O jogador será notificado e poderá ver sua pontuação.
+5. **Reinício**: O jogador pode reiniciar o jogo a qualquer momento para começar do zero.
 
-### `npm run build`
+### Recursos Adicionais
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Ranking Local**: O jogo armazena e exibe as melhores pontuações localmente, permitindo que o jogador veja seu progresso ao longo do tempo.
+- **Animações e Feedback Auditivo**: Animações visuais tornam o jogo mais atraente, enquanto sons de feedback (correto e incorreto) melhoram a experiência do jogador.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tecnologias Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Styled-components**: Biblioteca para estilização de componentes em React.
+- **React-spring**: Biblioteca para animações em React.
 
-### `npm run eject`
+## Instruções para Executar o Jogo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Pré-requisitos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js instalado
+- NPM ou Yarn instalado
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Passos para Execução
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clonar o Repositório**
 
-## Learn More
+   ```sh
+   git clone https://github.com/seu-usuario/minigame-sequencia-teclas.git
+   cd minigame-sequencia-teclas
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Instalar Dependências**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   npm install
+   ```
 
-### Code Splitting
+   ou
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```sh
+   yarn install
+   ```
 
-### Analyzing the Bundle Size
+3. **Iniciar o Jogo**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```sh
+   npm start
+   ```
 
-### Making a Progressive Web App
+   ou
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```sh
+   yarn start
+   ```
 
-### Advanced Configuration
+   O jogo estará disponível em `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Estrutura do Projeto
 
-### Deployment
+```plaintext
+minigame/
+│
+├── public/
+│   ├── correct.mp3
+│   ├── incorrect.mp3
+│   ├── index.html
+│   └── ...
+│
+├── src/
+│   ├── components/
+│   │   ├── GameScreen/
+│   │   │   ├── GameScreen.jsx
+│   │   │   ├── GameScreenController.js
+│   │   │   ├── GameScreenStyles.js
+│   │   ├── StartScreen/
+│   │   │   ├── StartScreen.jsx
+│   │   │   ├── StartScreenStyles.js
+│   │   ├── Ranking/
+│   │   │   ├── Ranking.jsx
+│   │   │   ├── RankingStyles.js
+│   ├── App.jsx
+│   ├── App.css
+│   └── index.js
+└── ...
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contribuição
 
-### `npm run build` fails to minify
+Se você encontrar algum problema ou tiver alguma sugestão para melhorar o jogo, sinta-se à vontade para abrir uma issue ou enviar um pull request no repositório do GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Espero que você se divirta jogando este mini-game tanto quanto eu me diverti desenvolvendo-o! Se tiver alguma dúvida ou feedback, não hesite em entrar em contato.
+
+Christian Dambock Gomes. 
+christiandambock@gmail.com 
+https://www.linkedin.com/in/christian-dambock-gomes/
