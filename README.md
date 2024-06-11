@@ -1,16 +1,14 @@
-### README
-
-# Mini-Game: Sequência de Teclas
+# KeyMaster: Teste Sua Agilidade!
 
 ## Apresentação
 
-Olá! Meu nome é Christian Dambock Gomes e sou desenvolvedor front-end com experiência em criação de aplicações interativas e dinâmicas utilizando React. Este projeto é um mini-game desenvolvido como parte de um desafio de front-end. O objetivo do jogo é testar a habilidade do jogador em seguir rapidamente uma sequência aleatória de teclas dentro de um tempo limite.
+Olá! Meu nome é Christian Dambock e sou desenvolvedor front-end com experiência em criação de aplicações interativas e dinâmicas utilizando React. Este projeto é um mini-game desenvolvido como parte de um desafio de front-end. O objetivo do jogo é testar a habilidade do jogador em seguir rapidamente uma sequência aleatória de teclas dentro de um tempo limite.
 
 ## Sobre o Jogo
 
 ### Descrição
 
-Neste mini-game, o jogador deve seguir uma sequência de teclas que aparece na tela, pressionando cada tecla na ordem correta. O jogo é uma excelente maneira de treinar a memória e a agilidade, proporcionando diversão e desafio para todos os jogadores.
+No KeyMaster, o jogador deve seguir uma sequência de teclas que aparece na tela, pressionando cada tecla na ordem correta. O jogo é uma excelente maneira de treinar a memória e a agilidade, proporcionando diversão e desafio para todos os jogadores.
 
 ### Lógica do Jogo
 
@@ -46,8 +44,8 @@ Neste mini-game, o jogador deve seguir uma sequência de teclas que aparece na t
 1. **Clonar o Repositório**
 
    ```sh
-   git clone https://github.com/seu-usuario/minigame-sequencia-teclas.git
-   cd minigame-sequencia-teclas
+   git clone https://github.com/seu-usuario/keymaster-sequencia-teclas.git
+   cd keymaster-sequencia-teclas
    ```
 
 2. **Instalar Dependências**
@@ -79,7 +77,7 @@ Neste mini-game, o jogador deve seguir uma sequência de teclas que aparece na t
 ### Estrutura do Projeto
 
 ```plaintext
-minigame/
+keymaster/
 │
 ├── public/
 │   ├── correct.mp3
@@ -115,8 +113,8 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 
 ---
 
-Espero que você se divirta jogando este mini-game tanto quanto eu me diverti desenvolvendo-o! Se tiver alguma dúvida ou feedback, não hesite em entrar em contato.
+Espero que você se divirta jogando KeyMaster tanto quanto eu me diverti desenvolvendo-o! Se tiver alguma dúvida ou feedback, não hesite em entrar em contato.
 
-Christian Dambock Gomes. 
-christiandambock@gmail.com 
+Christian Dambock  
+ChristianDambock@gmail.com
 https://www.linkedin.com/in/christian-dambock-gomes/
